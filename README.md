@@ -7,3 +7,6 @@
 <!-- ![demo.gif](./assets/demo.gif) -->
 
 This is the official code for the paper, "Target-Aware Video Diffusion Models".
+
+## News
+- [2025/03/25] Paper released.
