@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Target-Aware Video Diffusion Models</h1>
   <p align="center">
-    arXiv 2025
+    ICLR 2026
   </p>
   <p align="center">
     <a href="https://taeksuu.github.io/">Taeksoo Kim</a>,
@@ -95,8 +95,8 @@ If you find TAViD useful for your work, please consider citing:
 @article{kim2025target,
     title={Target-Aware Video Diffusion Models},
     author={Kim, Taeksoo and Joo, Hanbyul},
-    journal={arXiv preprint arXiv:2503.18950},
-    year={2025}
+    booktitle={ICLR},
+    year={2026}
 }
 ```
 
