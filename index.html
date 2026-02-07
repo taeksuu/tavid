@@ -9,7 +9,7 @@
   <meta property="og:description" content="Given an input image, our target-aware video diffusion model generates a video in which an actor accurately interacts with a specified target. The target is indicated to the model via a segmentation mask, while the desired action is described with a text prompt."/>
   <meta property="og:url" content="https://taeksuu.github.io/tavid"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/banner_resized.png" />
+  <meta property="og:image" content="static/images/banner_resized.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="450"/>
 
@@ -18,7 +18,7 @@
   <meta name="twitter:description" content="Given an input image, our target-aware video diffusion model generates a video in which an actor accurately interacts with a specified target. The target is indicated to the model via a segmentation mask, while the desired action is described with a text prompt.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/banner_resized.png">
-  <meta name="twitter:card" content="Target-Aware Video Diffusion Models">
+  <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="Image-to-video, Controllable video generation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,13 +56,13 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://taeksuu.github.io/" target="_blank">Taeksoo Kim<sup>1</sup></a>,&nbsp</span>
+                <a href="https://taeksuu.github.io/" target="_blank">Taeksoo Kim<sup>1</sup></a>,&nbsp;</span>
                 <span class="author-block">
                   <a href="https://jhugestar.github.io/" target="_blank">Hanbyul Joo<sup>1,2</sup></a></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Seoul National University,&nbsp</span><span class="author-block"><sup>2</sup>RLWRLD</span><br>ICLR 2026</span>
+                    <span class="author-block"><sup>1</sup>Seoul National University,&nbsp;</span><span class="author-block"><sup>2</sup>RLWRLD</span><br><b>ICLR 2026</b>
                   </div>
 
                   <div class="column has-text-centered">
@@ -172,7 +172,7 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <video id="ta" autoplay muted loop playsinline height="100%">
+          <video id="ta-teddy" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/ta_teddy.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">
@@ -184,7 +184,7 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <video id="ta" autoplay muted loop playsinline height="100%">
+          <video id="ta-coke" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/ta_coke.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">
@@ -199,7 +199,7 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <video id="mo" autoplay muted loop playsinline height="100%">
+          <video id="mo-multi" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/multi_obj.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">
@@ -230,7 +230,7 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <video id="mo" autoplay muted loop playsinline height="100%">
+          <video id="two-masks" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/two_masks.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">
@@ -258,7 +258,7 @@
       <div class="columns is-centered">
         <div class="column">
           <div class="content">
-            <video autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline width="100%">
               <source src="./static/videos/ego4d_1.mp4" type="video/mp4">
             </video>
             <p class="has-text-centered">
@@ -271,7 +271,7 @@
       <div class="columns is-centered">
         <div class="column">
           <div class="content">
-            <video autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline width="100%">
               <source src="./static/videos/ego4d_2.mp4" type="video/mp4">
             </video>
             <p class="has-text-centered">
@@ -290,7 +290,7 @@
       <div class="columns is-centered">
         <div class="column">
           <div class="content">
-            <video autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline width="100%">
               <source src="./static/videos/das_1.mp4" type="video/mp4">
             </video>
             <p class="has-text-centered">
@@ -303,7 +303,7 @@
       <div class="columns is-centered">
         <div class="column">
           <div class="content">
-            <video autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline width="100%">
               <source src="./static/videos/das_2.mp4" type="video/mp4">
             </video>
             <p class="has-text-centered">
@@ -340,7 +340,7 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <video id="vcc" autoplay muted loop playsinline height="100%">
+          <video id="vcc" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/vcc_crf.mp4" type="video/mp4">
           </video>
           <style>
@@ -355,11 +355,11 @@
   
     <h2 class="title is-5">Zero-shot 3D human-object interaction synthesis</h2>
     <p>We demonstrate our target-aware model's connection with robotic applications by performing imitation learning on 3D poses of a person interacting with a target in the scene.
-      We use <a href="https://zju3dv.github.io/gvhmr/GVHMR" target="_blank">GVHMR</a> to estimate 3D human motions from our generated videos and <a href="https://wyhuai.github.io/physhoi-page/" target="_blank">PhysHOI</a> to perform physics-based imitation learning of the human motion.</p>
+      We use <a href="https://zju3dv.github.io/gvhmr/" target="_blank">GVHMR</a> to estimate 3D human motions from our generated videos and <a href="https://wyhuai.github.io/physhoi-page/" target="_blank">PhysHOI</a> to perform physics-based imitation learning of the human motion.</p>
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <video id="mo" autoplay muted loop playsinline height="100%">
+          <video id="ir-2" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/ir_2.mp4" type="video/mp4">
           </video>
         </div>
@@ -368,7 +368,7 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <video id="mo" autoplay muted loop playsinline height="100%">
+          <video id="ir-1" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/ir_1.mp4" type="video/mp4">
           </video>
         </div>
@@ -384,24 +384,24 @@
     <div class="hero-body">
       <br>
       <h2 class="title is-3 has-text-centered">Method</h2>
-      <h3>
+      <p>
         1. We first extend a baseline video diffusion model to incorporate the mask as an additional input. <br>
-        2. We introduce a <span style="color:green">[TGT]</span> token that will be used to encode target’s spatial information in the text prompt. <br>
+        2. We introduce a <span style="color:green">[TGT]</span> token that will be used to encode target's spatial information in the text prompt. <br>
         3. We fine-tune the model using our cross-attention loss that aligns the cross-attention maps associated with this token with the input target mask.
         <br><br>
-      </h3>
+      </p>
       
       <div class="columns is-centered">
-        <img src="static/images/method_0.png" alt="Random Image" id="tree" width="45%">
+        <img src="static/images/method_0.png" alt="Method overview" id="method-overview" width="45%">
       </div>
 
-      <h3>
+      <p>
         During inference, we prepend the <span style="color:green">[TGT]</span> token to words referring to the target and enable the model to leverage the spatial cue provided by the mask. Our cross-attention loss effectively guides the <span style="color:green">[TGT]</span> token to focus on the target region, enabling precise interactions between the actor and the target.
         <br><br>
-      </h3>
+      </p>
 
       <div class="columns is-centered">
-        <img src="static/images/method_1.png" alt="Random Image" id="tree" width="60%">
+        <img src="static/images/method_1.png" alt="Cross-attention visualization" id="method-crossattn" width="60%">
       </div>
       <br>
       <!-- Toggle Button -->
@@ -411,39 +411,39 @@
 
       <!-- Hidden Section -->
       <div id="details-section" style="display: none;">
-        <h3>
+        <p>
           <br>
           For effective and efficient supervision, we selectively apply our cross-attention loss to the model by identifying: <br>
           1. <b>transformer blocks that best capture semantic details</b> (Left) : We first generate 100 videos and compute L2 error between cross-attention map of each block and the segmentation mask for a predefined token to evaluate semantic alignment of each block. We apply our loss to region of blocks with the least error.<br>
           2. <b>cross-attention regions that most influence target awareness of the model</b> (Right) : While both text-to-video (T2V) and video-to-text (V2T) cross-attention maps encode semantic information, we apply our cross-attention loss on V2T cross-attention regions, since V2T attention directly influences the video latent representations.<br>
           <br>
-        </h3>
+        </p>
         <div class="columns is-centered">
-          <img src="static/images/method_2.png" alt="Random Image" id="tree" width="80%">
+          <img src="static/images/method_2.png" alt="Block and region selection" id="method-selection" width="80%">
         </div>
 
-        <h3>
+        <p>
           <br>
           To integrate the target mask during generation, we extend our base image-to-video diffusion model, <a href="https://github.com/THUDM/CogVideo" target="_blank">CogVideoX</a>. Specifically, we concatenate the downsampled mask alongside the input image condition and append an extra input channel to the original image projection layer. During fine-tuning, we train the image projection layer and the transformer.
           <br>
           <br>
-        </h3>
+        </p>
         <div class="columns is-centered">
-          <img src="static/images/method_3.png" alt="Random Image" id="tree" width="50%">
+          <img src="static/images/method_3.png" alt="Model architecture" id="method-arch" width="50%">
         </div>
 
-        <h3>
+        <p>
           <br>
           To train our target-aware model, we curate 1290 videos from <a href="https://ego-exo4d-data.org/" target="_blank">Ego-Exo4D</a> and <a href="https://virtualhumans.mpi-inf.mpg.de/behave/" target="_blank">BEHAVE</a> datasets that satisfy two conditions: <br>
           1. the initial frame should depict a scene where an actor is present but not yet interacting with the target, and <br>
           2. subsequent frames must capture the actor engaging with the target. <br>
-          We obtain the mask for the target in the initial frame using <a href="https://github.com/facebookresearch/segment-anything" target="_blank">SAM</a> and generate text prompts with <a href="https://huggingface.co/THUDM/cogvlm2-llama3-caption" target="_blank">CogVLM2-Caption</a>. While it is ideal to prepend <span style="color:green">[TGT]</span> tokens to the target object tokens during caption generation, we find that current video captioning tools cannot reliably identify the target object in complex scenes. Therefore, we add a general sentence, “The person interacts with <span style="color:green">[TGT]</span> object.” to the generated captions, which we find sufficient to train our target-aware model.
+          We obtain the mask for the target in the initial frame using <a href="https://github.com/facebookresearch/segment-anything" target="_blank">SAM</a> and generate text prompts with <a href="https://huggingface.co/THUDM/cogvlm2-llama3-caption" target="_blank">CogVLM2-Caption</a>. While it is ideal to prepend <span style="color:green">[TGT]</span> tokens to the target object tokens during caption generation, we find that current video captioning tools cannot reliably identify the target object in complex scenes. Therefore, we add a general sentence, "The person interacts with <span style="color:green">[TGT]</span> object." to the generated captions, which we find sufficient to train our target-aware model.
 
           <br>
           <br>
-        </h3>
+        </p>
         <div class="content">
-          <video id="method_4" autoplay muted loop playsinline height="100%">
+          <video id="method_4" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/method_4_crf.mp4" type="video/mp4">
           </video>
         </div>
@@ -501,7 +501,7 @@
       <pre><code>@inproceedings{kim2025target,
         title={Target-Aware Video Diffusion Models},
         author={Kim, Taeksoo and Joo, Hanbyul},
-        booktitle=iclr,
+        booktitle={ICLR},
         year={2026}
       }</code></pre>
     </div>
