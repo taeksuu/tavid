@@ -26,6 +26,7 @@
 </p>
 
 ## Updates
+- [2026/02/07] TAViD accepted to ICLR 2026.
 - [2025/05/20] Initial code for inference and checkpoint released.
 - [2025/03/25] Paper released.
 
@@ -34,6 +35,7 @@ TODO list.
 - [ ] Release training code and dataset
 - [ ] Add attention visualization code
 - [ ] Add Gradio app
+- [ ] TAViD on Wan
 
 ## Table of Contents
 <ul>
@@ -86,7 +88,7 @@ python inference.py \
 Since our base model, CogvideoX, is trained with long prompts, prompt quality directly impacts the output quality. Please refer to <a href="https://github.com/THUDM/CogVideo/blob/main/inference/convert_demo.py">this guide</a> from CogVideoX for prompt enhancement. The generated videos can still suffer from limitations, including object disappearances or implausible dynamics. You may have to try multiple times for the best results.
 
 ## Training and Dataset
-We will soon release the training code and data.
+We plan to release the training code and data during March 2026.
 
 
 ## Citation
